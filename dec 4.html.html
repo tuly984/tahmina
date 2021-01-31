@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<ul class="result">
+		
+	</ul>
+
+	<script>
+		
+		//let a,b;
+		//a=8
+		//b=6
+
+		//if (a>b){
+			//console.log('A is greater than B')
+		//}else{
+			//console.log(false)
+		//}
+
+		let link='https://jsonplaceholder.typicode.com/users'
+		//async function loadData(){
+			//try{
+				//let res  = await fetch(link)
+				//let data = await res.json()
+				//let output=''
+				//for (let user of data){
+					//output +=`
+					//<li>Name: ${user.name},email: ${user.email} </li>
+
+
+
+
+					//`;
+				//}
+
+				//document.querySelector('.result').innerHTML=output
+			//}catch(err){
+				//console.log('Error Found')
+			//}
+		//}
+
+
+		//loadData()
+
+		fetch (link).then(data =>{
+			res.json().then(data =>{
+				console.log(data)
+			}).catch(err =>{
+				console.log('Second error found')
+			})
+		}).catch(err =>{
+			console.log('First erro found')
+		})
+
+		function regular (res){
+			console.log('pocessing....')
+		}
+
+		const arrow=res=>{
+			return 'something'
+		}
+
+		arrow();
+
+	</script>
+
+
+	
+
+</body>
+</html>
